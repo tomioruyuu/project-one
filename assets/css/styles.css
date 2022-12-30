@@ -40,6 +40,11 @@ a {
     color: #ffffff;
 }
 
+.btn:hover {
+    opacity: 0.8;
+}
+
+
 /* ========HEADER========= */
 
 header {
