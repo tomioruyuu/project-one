@@ -44,22 +44,23 @@ a {
     opacity: 0.8;
 }
 
-
 /* ========HEADER========= */
-
-header {
-    position: relative;
-    height: 112vh;
+.fixed-header {
     background: #e6f0ff;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
 }
 
-header nav {
-    padding-top: 46px;
+nav {
+    padding: 12px 0;
     display: flex;
+    align-items: center;
     position: relative;
 }
 
-header nav .navigation {
+nav .navigation {
     display: flex;
     margin-left: 64px;
 }
@@ -79,7 +80,7 @@ nav .navigation a:hover {
     text-decoration: underline;
 }
 
-header nav .sign-btn {
+nav .sign-btn {
     right: 0;
     position: absolute;
     font-weight: 500;
@@ -95,12 +96,19 @@ nav .sign-btn .sign-up {
 }
 
 /* ========CONTENT HEADER======== */
-header .content-header {
-    margin-top: 138px;
+.hero {
+    position: relative;
+    height: 105vh;
+    background: #e6f0ff;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .content-header {
     width: 560px;
 }
 
-header .content-header .sub-title {
+.hero .content-header .sub-title {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 1.5;
@@ -108,14 +116,14 @@ header .content-header .sub-title {
     color: #687690;
 }
 
-header .content-header .title {
+.hero .content-header .title {
     font-weight: 700;
     font-size: 6.3rem;
     line-height: 1.2;
     color: #000336;
 }
 
-header .content-header .desc {
+.hero .content-header .desc {
     margin-top: 30px;
     font-weight: 400;
     font-size: 18px;
@@ -123,12 +131,12 @@ header .content-header .desc {
     color: #5a6473;
 }
 
-header .content-header .action-header {
+.hero .content-header .action-header {
     margin-top: 40px;
     min-width: 170px;
 }
 
-header .house-logo {
+.hero .house-logo {
     position: absolute;
     bottom: 0;
     right: calc((100% - 1110px) / 2 - 100px);
@@ -162,7 +170,7 @@ header .house-logo {
     padding-bottom: 41px;
 }
 
-.clients .client-logo a{
+.clients .client-logo a {
     height: 90px;
     padding: 32px 41px 23px;
     border-radius: 12px;
