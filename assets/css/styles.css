@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
 }
+html,
+body {
+    scroll-behavior: smooth;
+}
 
 html {
     font-size: 62.5%;
@@ -98,7 +102,7 @@ nav .sign-btn .sign-up {
 /* ========CONTENT HEADER======== */
 .hero {
     position: relative;
-    height: 105vh;
+    height: 100vh;
     background: #e6f0ff;
     display: flex;
     flex-direction: column;
@@ -106,6 +110,7 @@ nav .sign-btn .sign-up {
 
 .hero .content-header {
     width: 560px;
+    /* margin-top: 165px; */
 }
 
 .hero .content-header .sub-title {
