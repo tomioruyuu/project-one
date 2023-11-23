@@ -1,0 +1,99 @@
+/* PC */
+@media screen and (min-width: 992px) {
+  .header-mobile,
+  .menu-mobile,
+  .show-on-mobile {
+    display: none;
+  }
+}
+
+/* TABLET AND MOBILE */
+@media screen and (max-width: 991px) {
+  .fixed-header {
+    padding: 0 24px;
+  }
+
+  nav .navigation {
+    display: none;
+  }
+
+  .logo-web {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .menu-mobile {
+    font-size: 24px;
+    color: #333;
+  }
+
+  .menu-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .menu-overlay.open {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s linear;
+  }
+
+  .menu-drawer {
+    position: fixed;
+    inset: 0 40% 0 0;
+    padding: 40px;
+    background: #ededed;
+    transform: translateX(-100%);
+    z-index: 2;
+  }
+  .menu-drawer.show {
+    transform: translateX(0);
+    transition: 0.5s linear;
+  }
+
+  .menu-drawer .navigation {
+    margin-top: 20px;
+  }
+  .menu-drawer .navigation a {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 14px 0;
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: 720px) and (max-width: 991px) {
+  .show-on-mobile {
+    display: none;
+  }
+}
+
+/* MOBILE */
+@media screen and (max-width: 719px) {
+  .menu-drawer {
+    inset: 0 25% 0 0;
+  }
+
+  nav .sign-btn {
+    display: none;
+  }
+
+  .menu-drawer .sign-btn {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+  }
+  .menu-drawer .sign-btn a {
+    display: inline-block;
+    padding: 14px 8px;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+}
