@@ -3,21 +3,21 @@ let $$ = document.querySelectorAll.bind(document)
 
 
 function showRemoveMenuItem() {
-    let menuMobile = $(".menu-mobile")
-    let menuOverlay = $(".menu-overlay")
-    let menuDrawer = $(".menu-drawer")
-    let headerMobile = $(".header-mobile")
-    
-    headerMobile.onclick = function() {
-        menuDrawer.classList.remove("show")
-        menuOverlay.classList.remove("open")
-    }
+   let menuBtn = $(".menu-icon")
+   let menuOverlay = $(".menu-overlay")
+   let menuDrawer = $(".menu-drawer")
+   let headerMobile = $(".header-mobile")
 
-    menuMobile.onclick = function () {
-        menuDrawer.classList.add("show")
-        menuOverlay.classList.add("open")
-        
-    }
+   menuBtn.onclick = function() {
+    menuOverlay.classList.add("show")
+    menuDrawer.classList.add("open")
+   }
+
+   headerMobile.onclick = function() {
+    menuOverlay.classList.remove("show")
+    menuDrawer.classList.remove("open")
+   }
+   
 }
 
 showRemoveMenuItem()

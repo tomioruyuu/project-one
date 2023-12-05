@@ -33,17 +33,40 @@
     <section class="navbar">
       <div class="main-content">
         <div class="navbar-content">
+          <!-- HEADER LOGO -->
+          <i class="fa-solid fa-bars show-tm menu-icon"></i>
+
+          <!-- NAVBAR ON PC -->
           <img src="./assets/img/Logo.svg" alt="" class="logo" />
           <ul class="nav">
-            <li><a href="#!">Home</a></li>
-            <li><a href="#!">Features</a></li>
-            <li><a href="#!">Services</a></li>
-            <li><a href="#!">Resources</a></li>
-            <li><a href="#!">Contact</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#hiw">Services</a></li>
+            <li><a href="#fo">Features</a></li>
+            <li><a href="#ft">Resources</a></li>
+            <li><a href="#footer">Contact</a></li>
           </ul>
-          <div class="nav-cta">
+          <div class="nav-cta hidden-mobile">
             <a href="#!">Sign in</a>
             <a class="nav-cta__btn btn" href="#!">Sign up</a>
+          </div>
+        </div>
+
+        <!-- NAVBAR ON TABLET/MOBILE -->
+        <div class="header-mobile">
+          <div class="menu-overlay"></div>
+          <div class="menu-drawer">
+            <img src="./assets/img/Logo.svg " class="show-tm" alt="" />
+            <ul class="nav-mobile show-tm">
+              <li><a href="#">Home</a></li>
+              <li><a href="#hiw">Services</a></li>
+              <li><a href="#fo">Features</a></li>
+              <li><a href="#ft">Resources</a></li>
+              <li><a href="#footer">Contact</a></li>
+            </ul>
+            <div class="nav__mobile-cta show-tm">
+              <a href="#!">Sign in</a>
+              <a class="nav__mobile-cta__btn" href="#!">Sign up</a>
+            </div>
           </div>
         </div>
       </div>
@@ -60,7 +83,7 @@
                 Discover a place you'll love to live.
               </h2>
               <p class="hero-info__desc">
-                get the best real estate deals first, before they hit the mass
+                Get the best real estate deals first, before they hit the mass
                 market! HOT FORECLOSURE DEALS with one simple search.
               </p>
               <div class="hero-info__cta">
@@ -86,7 +109,7 @@
             <div class="evaluate-clients">
               <div class="row row-1">
                 <img src="./assets/img/Logo.svg" alt="" />
-                <div class="row__star-block">
+                <div class="row__star-block hidden-mobile">
                   <img src="./assets/img/star.svg" alt="" />
                   <img src="./assets/img/star.svg" alt="" />
                   <img src="./assets/img/star.svg" alt="" />
@@ -96,7 +119,7 @@
               </div>
               <div class="row row-2">
                 <p>More than 45,000+ companies trust besnik</p>
-                <p>5 Star Ratings (2k+ Review)</p>
+                <p class="hidden-mobile">5 Star Ratings (2k+ Review)</p>
               </div>
             </div>
             <!-- CLIENTS LIST -->
@@ -121,7 +144,7 @@
         </div>
       </section>
       <!-- HOW ITS WORKS? -->
-      <section class="hiw">
+      <section class="hiw" id="hiw">
         <div class="main-content">
           <div class="hiw-content">
             <!-- HOW ITS WORKS HEADING -->
@@ -163,7 +186,7 @@
         </div>
       </section>
       <!-- FEATURE one -->
-      <section class="fo">
+      <section class="fo" id="fo">
         <div class="main-content">
           <div class="fo-content">
             <!-- FEATURE ONE HEADING -->
@@ -171,7 +194,7 @@
               <div class="fo-heading__name">Featured Properties</div>
               <div class="fo-cta">
                 <p>Everything you need to know when you're looking</p>
-                <a class="fo-cta__btn" href="#!"
+                <a class="fo-cta__btn hidden-mobile" href="#!"
                   >View All Properties
                   <i class="fa-solid fa-arrow-right-long right-direction"></i
                 ></a>
@@ -261,7 +284,7 @@
         </div>
       </section>
       <!-- FEATURE TWO -->
-      <section class="ft">
+      <section class="ft" id="ft">
         <div class="main-content">
           <div class="ft-content">
             <!-- FEATURE TWO SOCIAL -->
@@ -377,7 +400,7 @@
         </div>
       </section>
       <!-- FOOTER -->
-      <footer>
+      <footer id="footer">
         <div class="main-content">
           <!-- FOOTER CONTENT -->
           <ul class="footer-content">
@@ -437,20 +460,22 @@
               <ul class="footer-item__content">
                 <p>You’ll find your next home, in any style you prefer.</p>
                 <div class="footer-social">
-                  <img src="./assets/img/Facebook icon.svg" alt="">
-                  <img src="./assets/img/twitter icon.svg" alt="">
-                  <img src="./assets/img/lindedin icon.svg" alt="">
+                  <img src="./assets/img/Facebook icon.svg" alt="" />
+                  <img src="./assets/img/twitter icon.svg" alt="" />
+                  <img src="./assets/img/lindedin icon.svg" alt="" />
                 </div>
               </ul>
             </li>
           </ul>
 
           <div class="footer-footer">
-            <img src="./assets/img/Logo.svg" alt="">
+            <img src="./assets/img/Logo.svg" alt="" />
             <p>Copyright 2020.com, All rights reserved.</p>
           </div>
         </div>
       </footer>
     </main>
+
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
